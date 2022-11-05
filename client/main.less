@@ -1,0 +1,353 @@
+main {
+  overflow: visible;
+}
+
+.round {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  align-content: flex-start;
+  justify-content: flex-start;
+
+  .content {
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .player-profile {
+    display: flex;
+    flex-direction: column;
+    //width: 24rem;
+    width: 17%;
+    min-height: 100%;
+    align-items: center;
+    padding: 2rem 2rem;
+    text-align: center;
+
+    .profile-avatar {
+      //width: 8rem;
+      //height: 8rem;
+      width: 90%;
+      //height: 90%;
+      margin: 3rem 0;
+    }
+
+    .timer {
+      margin-top: 2rem;
+      text-align: center;
+
+      .seconds {
+        font-size: 3rem;
+        // Helvetica has tabular numbers (fixed width), which looks better
+        // for a timer, doesn't jump all over the place.
+        font-family: Helvetica, Arial, sans-serif;
+        color: green;
+      }
+      &.lessThan10 {
+        .seconds {
+          color: orange;
+        }
+      }
+      &.lessThan5 {
+        .seconds {
+          color: red;
+        }
+      }
+    }
+  }
+
+  .task {
+    padding: 4rem 0rem 0 4rem;
+    width: 50%;
+    text-align: justify;
+
+
+    .task-stimulus {
+      img {
+        max-width: 40%;
+        max-height: 40%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    
+    .task-response {
+      margin: 3rem 0 0;
+
+      form {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40rem;
+
+        button[type="submit"] {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 2rem;
+        }
+      }
+
+      .response-submitted {
+        background-color: #e8e8e8;
+        padding: 2rem;
+        border-radius: 0.4rem;
+
+        h5 {
+          margin: 0 0 0.5rem;
+          font-size: inherit;
+        }
+      }
+    }
+  }
+
+  .social-exposure {
+    width: 25%;
+    margin-top: 2rem;
+    margin-left: 1.8rem;
+    margin-right: 2.5rem;
+    text-align: justify;
+
+    .alter {
+      width: 100%;
+      display: flex;
+      margin-top: 2rem;
+
+      .alter-avatar {
+        width: 35%;
+        height: 35%;
+        padding-right: 10%;
+      }
+
+      .range {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+button {
+  padding: 0.8rem 1.2rem;
+  border-radius: 0.3rem;
+  border: 1px solid lightgray;
+  background-color: #eee;
+
+  &:hover {
+    background-color: #ddd;
+  }
+}
+
+.instructions,
+.start-notification,
+.quiz,
+.exit-survey,
+.profile-check {
+  button {
+    margin: 2rem 1rem 0 0;
+  }
+
+  label {
+    display: block;
+    margin: 2rem 0 1rem;
+  }
+
+  input[type="text"],
+  input[type="number"] {
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.3rem;
+    border: 1px solid lightgray;
+  }
+
+  input[type="radio"] {
+    margin-right: 0.5rem;
+  }
+
+  textarea {
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.3rem;
+    border: 1px solid lightgray;
+  }
+}
+
+.profile-check {
+  .player-profile {
+    display: flex;
+    flex-direction: column;
+    //width: 24rem;
+    width: 95%;
+    align-items: center;
+
+    .profile-avatar {
+      width: 8rem;
+      //height: 8rem;
+      align-items: center;
+      text-align: center;
+    }
+    .profile-info {
+      text-align: center;
+      margin: 2rem 0 9rem 0;
+      span {
+        //font-size: 3rem;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .form-line {
+    display: flex;
+
+    & > div {
+      margin-right: 30px;
+
+      textarea {
+        min-height: 90px;
+        width: 100%;
+      }
+    }
+
+    &.thirds {
+      & > div {
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 30%;
+
+        label {
+          min-height: 36px;
+        }
+      }
+    }
+  }
+}
+
+.exit-survey {
+  .form-line {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+
+    label {
+      width: 50%;
+    }
+    input {
+      height: 35px;
+      width: 5.5%;
+      margin-left: 5%;
+      margin-top: 1%;
+    }
+    .radio {
+      margin-left: 30px;
+      input[type="radio"] {
+        width: 10%;
+      }
+    }
+    textarea {
+      min-height: 100px;
+      width: 100%;
+    }
+  }
+
+  table.bp3-html-table td {
+    vertical-align: middle;
+    text-align: center;
+  }
+  table.bp3-html-table th {
+    vertical-align: middle;
+    text-align: center;
+  }
+  table.bp3-html-table td.right {
+    vertical-align: middle;
+    text-align: right;
+  }
+  table.bp3-html-table td.left {
+    vertical-align: middle;
+    text-align: left;
+  }
+  .custom-table {
+    td, th {
+      width: 10%;
+      text-align: center;
+      vertical-align: middle;
+      padding-right: 10px;
+    }
+  }
+}
+
+
+.instructions {
+  text-align: justify;
+  .instruction-text {
+    font-size: 1.9rem;
+  }
+
+  img {
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.start-notification {
+  font-size: 3rem;
+  text-align: center;
+  align-items: center;
+}
+
+.wait-period {
+  font-size: 2rem;
+  text-align: center;
+  align-items: center;
+}
+
+.finished {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.boldlabel {
+  padding-top: 2rem;
+  font-weight: bold;
+}
+
+.smallspace {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.mediumspace {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.largespace {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.verylargespace {
+  margin-top: 5.4rem;
+  margin-bottom: 5.4rem;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+}

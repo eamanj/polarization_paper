@@ -1,0 +1,28 @@
+{
+  "admins": [
+    {
+      "username": "admin",
+      "password": "outsider1"
+    }
+  ],
+  "galaxy.meteor.com": {
+    "env": {
+      "MONGO_URL": "mongodb+srv://admin:outsider1@test-cluster-zpb8j.mongodb.net/test-outsider-game",
+      "MONGO_OPLOG_URL": "mongodb+srv://oplogusr:outsider1@test-cluster-zpb8j.mongodb.net/local"
+    }
+  },
+
+  "public": {
+    "playerIdParam": "workerId",
+
+    "playerIdParamExclusive": false,
+
+    "debug_newPlayer": true,
+
+    "debug_resetSession": true,
+
+    "debug_resetDatabase": true,
+
+    "debug_gameDebugMode": true
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "admins": [
+    {
+      "username": "admin",
+      "password": "admin"
+    }
+  ],
+
+  "public": {
+    "playerIdParam": "workerId",
+
+    "playerIdParamExclusive": false,
+
+    "debug_newPlayer": false,
+
+    "debug_resetSession": false,
+
+    "debug_resetDatabase": false,
+
+    "debug_gameDebugMode": false
+  }
+}

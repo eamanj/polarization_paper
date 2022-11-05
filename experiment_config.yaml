@@ -1,0 +1,192 @@
+treatments:
+  - name: micro apolitical prime
+    factorIds:
+      - Xet22qJkWxTg5sRzh
+      - j8cPe5ciqqxJx3Zt5
+      - iC2a2adCZBF2c3FXb
+      - EXnaBFWgrhiz2zkdD
+    archivedAt: 2019-03-25T21:50:07.037Z
+  - name: micro patriotic prime
+    factorIds:
+      - Xet22qJkWxTg5sRzh
+      - LYCoEdT4Gk2bAnC7T
+      - iC2a2adCZBF2c3FXb
+      - EXnaBFWgrhiz2zkdD
+    archivedAt: 2019-03-25T21:50:07.560Z
+  - name: micro enemy prime
+    factorIds:
+      - Xet22qJkWxTg5sRzh
+      - vjqusSNNvCjkWyrLB
+      - iC2a2adCZBF2c3FXb
+      - EXnaBFWgrhiz2zkdD
+    archivedAt: 2019-03-25T21:50:07.985Z
+  - name: micro apolitical hostile
+    factorIds:
+      - Xet22qJkWxTg5sRzh
+      - j8cPe5ciqqxJx3Zt5
+      - iC2a2adCZBF2c3FXb
+      - EXnaBFWgrhiz2zkdD
+      - yjKgRNSFAF2BjhnTm
+    archivedAt: 2019-04-16T19:50:03.269Z
+  - name: micro apolitical friendly
+    factorIds:
+      - Xet22qJkWxTg5sRzh
+      - j8cPe5ciqqxJx3Zt5
+      - iC2a2adCZBF2c3FXb
+      - EXnaBFWgrhiz2zkdD
+      - eM5jDahLcbrv9Pu4i
+  - name: micro apolitical stubborn
+    factorIds:
+      - Xet22qJkWxTg5sRzh
+      - j8cPe5ciqqxJx3Zt5
+      - iC2a2adCZBF2c3FXb
+      - EXnaBFWgrhiz2zkdD
+      - H8FQh7PAuzdWELdgm
+  - name: micro patriotic hostile
+    factorIds:
+      - Xet22qJkWxTg5sRzh
+      - LYCoEdT4Gk2bAnC7T
+      - iC2a2adCZBF2c3FXb
+      - EXnaBFWgrhiz2zkdD
+      - yjKgRNSFAF2BjhnTm
+    archivedAt: 2019-04-16T19:50:04.778Z
+  - name: micro patriotic friendly
+    factorIds:
+      - Xet22qJkWxTg5sRzh
+      - LYCoEdT4Gk2bAnC7T
+      - iC2a2adCZBF2c3FXb
+      - EXnaBFWgrhiz2zkdD
+      - eM5jDahLcbrv9Pu4i
+  - name: micro patriotic stubborn
+    factorIds:
+      - Xet22qJkWxTg5sRzh
+      - LYCoEdT4Gk2bAnC7T
+      - iC2a2adCZBF2c3FXb
+      - EXnaBFWgrhiz2zkdD
+      - H8FQh7PAuzdWELdgm
+  - name: micro enemy hostile
+    factorIds:
+      - Xet22qJkWxTg5sRzh
+      - vjqusSNNvCjkWyrLB
+      - iC2a2adCZBF2c3FXb
+      - EXnaBFWgrhiz2zkdD
+      - yjKgRNSFAF2BjhnTm
+    archivedAt: 2019-04-16T19:50:06.591Z
+  - name: micro enemy friendly
+    factorIds:
+      - Xet22qJkWxTg5sRzh
+      - vjqusSNNvCjkWyrLB
+      - iC2a2adCZBF2c3FXb
+      - EXnaBFWgrhiz2zkdD
+      - eM5jDahLcbrv9Pu4i
+  - name: micro enemy stubborn
+    factorIds:
+      - Xet22qJkWxTg5sRzh
+      - vjqusSNNvCjkWyrLB
+      - iC2a2adCZBF2c3FXb
+      - EXnaBFWgrhiz2zkdD
+      - H8FQh7PAuzdWELdgm
+factorTypes:
+  - _id: xmwJagQFYM8HX59St
+    name: playerCount
+    description: The Number of players participating in the given game.
+    required: true
+    type: Integer
+    min: 1
+  - _id: WgxoewtvrWNpFyqW8
+    name: prime
+    description: It determines the priming condition of the experiment.
+    required: true
+    type: Integer
+    min: 1
+    max: 1000
+  - _id: WqrRhvkhzk76HB6fq
+    name: botsCount
+    description: The number of bots as players participating in the game.
+    required: true
+    type: Integer
+    min: 0
+    max: 1000
+  - _id: iMnQbX3kYzW3rfaX7
+    name: botPoliticalAffiliation
+    description: >-
+      It determines the political affiliation of the bot if there is a bot in
+      the game.
+    required: true
+    type: String
+  - _id: 33dr7jPuxT4Gton5P
+    name: botBehavior
+    description: How the bot updates its estimate in successive rounds.
+    required: true
+    type: String
+factors:
+  - _id: ru8FTrHrAiQZxeft6
+    name: solo
+    value: 1
+    factorTypeId: xmwJagQFYM8HX59St
+  - _id: Xet22qJkWxTg5sRzh
+    name: double
+    value: 2
+    factorTypeId: xmwJagQFYM8HX59St
+  - _id: 6cDZiQuM8cuBXsrtY
+    name: group
+    value: 10
+    factorTypeId: xmwJagQFYM8HX59St
+  - _id: j8cPe5ciqqxJx3Zt5
+    name: apolitical
+    value: 1
+    factorTypeId: WgxoewtvrWNpFyqW8
+  - _id: LYCoEdT4Gk2bAnC7T
+    name: patriotic
+    value: 2
+    factorTypeId: WgxoewtvrWNpFyqW8
+  - _id: vjqusSNNvCjkWyrLB
+    name: enemy
+    value: 3
+    factorTypeId: WgxoewtvrWNpFyqW8
+  - _id: nfGimgFnsTynnyzCd
+    name: none
+    value: 0
+    factorTypeId: WqrRhvkhzk76HB6fq
+  - _id: iC2a2adCZBF2c3FXb
+    name: single
+    value: 1
+    factorTypeId: WqrRhvkhzk76HB6fq
+  - _id: DxEXwiPtBbYR89nke
+    name: democrat
+    value: democrat
+    factorTypeId: iMnQbX3kYzW3rfaX7
+  - _id: pZq5F2SoZ9MWdmuLf
+    name: republican
+    value: republican
+    factorTypeId: iMnQbX3kYzW3rfaX7
+  - _id: 5sJpsMqm6EzCxz9mG
+    name: majority
+    value: majority
+    factorTypeId: iMnQbX3kYzW3rfaX7
+  - _id: EXnaBFWgrhiz2zkdD
+    name: player_opposite_party
+    value: opposite
+    factorTypeId: iMnQbX3kYzW3rfaX7
+  - _id: ytjmB9t5TSqXyodpT
+    name: player_same_party
+    value: same
+    factorTypeId: iMnQbX3kYzW3rfaX7
+  - _id: H8FQh7PAuzdWELdgm
+    name: stubborn
+    value: stubborn
+    factorTypeId: 33dr7jPuxT4Gton5P
+  - _id: eM5jDahLcbrv9Pu4i
+    name: friendly
+    value: friendly
+    factorTypeId: 33dr7jPuxT4Gton5P
+  - _id: yjKgRNSFAF2BjhnTm
+    name: hostile
+    value: hostile
+    factorTypeId: 33dr7jPuxT4Gton5P
+lobbyConfigs:
+  - name: defaultLobby
+    timeoutType: lobby
+    timeoutInSeconds: 600
+    timeoutStrategy: fail
+    gameLobbyIds: []
