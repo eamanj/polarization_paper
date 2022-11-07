@@ -1,0 +1,6 @@
+﻿_id,name,required,description,type,min,max,createdAt,archivedAt
+4aPZzNimAHPR8JvP7,playerCount,true,The Number of players participating in the given game.,Integer,1,,2019-04-23T22:37:30Z,
+WgxoewtvrWNpFyqW8,prime,true,It determines the priming condition of the experiment.,Integer,1,1000,2019-04-27T22:55:00Z,
+WqrRhvkhzk76HB6fq,botsCount,true,The number of bots as players participating in the game.,Integer,0,1000,2019-04-27T22:55:00Z,
+iMnQbX3kYzW3rfaX7,botPoliticalAffiliation,true,It determines the political affiliation of the bot if there is a bot in the game.,String,,,2019-04-27T22:55:00Z,
+33dr7jPuxT4Gton5P,botBehavior,true,How the bot updates its estimate in successive rounds.,String,,,2019-04-27T22:55:00Z,
